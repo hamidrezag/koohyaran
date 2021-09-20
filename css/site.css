@@ -140,10 +140,50 @@ margin:10px 10px;
 .vCenterPage
 {
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
 }
 .card
 {
     background-color: white;
     border-radius: 50px;
+}
+.slick-next
+{
+    display: block;
+    height: 100%;
+    background: rgb(130, 214, 224);
+    border-radius: 100%;
+    width: 60px;
+    text-align: left;
+    right:-35px;
+}
+.slider
+{
+    overflow: hidden;
+}
+.slick-next:hover
+{
+    background:rgba(130, 214, 224,0.8);
+}
+.slick-next:focus {
+    background: rgba(130, 214, 224,0.8);;
+}
+.slick-prev
+{
+    display: block;
+    height: 100%;
+    background: rgb(130, 214, 224);
+    border-radius: 100%;
+    width: 60px;
+    text-align: right;
+    left: -35px;
+    z-index: 1;
+}
+.slick-prev:hover
+{
+    background:rgba(130, 214, 224,0.8);
+}
+.slick-prev:focus
+{
+    background:rgba(130, 214, 224,0.8);
 }
