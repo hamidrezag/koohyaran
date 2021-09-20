@@ -3,6 +3,7 @@
 <head>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/slick.css" rel="stylesheet" />
+    <link href="/css/slick-theme.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
 </head>
 
@@ -12,7 +13,7 @@
             <div class="col-1">
                 <div class="menuwrapper h-100 text-center">
                     <a href="" class="menu">
-                        <img src="./img/mnu.png" />
+                        <img src="/img/mnu.png" />
                     </a>
                     <ul>
                         <li>
@@ -54,8 +55,8 @@
                 </div>
             </div>
             <div class="col-11">
-                <div class="d-flex flex-column h-100">
-                    <div class="topbar h-200p d-flex W-100">
+                <div class="d-flex flex-column h-100  position-relative">
+                    <div class="topbar h-200p d-flex W-100 z2">
                         <a href="">
                             <img src="/img/enter.png" />
                         </a>
@@ -69,32 +70,38 @@
                             <img src="/img/logo.png">
                         </a>
                     </div>
-                    <div class="sliderwrapper w-100 h-100 position-absolute">
-                        <section class="slider" data-sizes="50vw">
-                            <div>
-                                ok
+                    <div class="sliderwrapper h-100 z1 position-absolute w-100 h-100">
+                        <section class="slider h-100 position-absolute w-100 top0 " data-sizes="50vw">
+                            <div class="h-100">
+                                <img src="./img/bk1.jpg" class="w-100" />
                             </div>
-                            <div>
-                               ok
+                            <div class="h-100">
+                                <img src="./img/bk2.jpg" class="w-100" />
                             </div>
-                            <div>
-                                ok
+                            <div class="h-100">
+                                <img src="./img/bk3.jpg" class="w-100" />
                             </div>
-                            <div>
-                                ok
-                            </div>
-                            <div>
-                                ok
-                            </div>
-                            <div>
-                                ok
+                            <div class="h-100">
+                                <img src="./img/bk4.jpg" class="w-100" />
                             </div>
                         </section>
                     </div>
-                    <!-- <div class="content">
-
-                </div>  -->
-                    <div class="bottombar mt-auto">
+                    <div class="content z5 pt-100 position-absolute w-100 padding250">
+                        <div class="position-relative w-100">
+                            <div class="position-absolute vCenterPage w-100">
+                                <div class="row">
+                                    <div class="col-5 offset-6">
+                                        <div class="card">
+                                            oooooooooooo
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bottombar position-absolute z3">
                         <a href="" class="mr-3">
                             <img src="/img/telegramicon.png" />
                         </a>
@@ -106,15 +113,17 @@
             </div>
         </div>
     </div>
-    <script src="/js/jquery-3.6.0.min.js">
+    <script src="/js/jquery-2.2.0.min.js" type="text/javascript"></script>
     </script>
-    <script src="/js/slick.js">
+    <script src="/js/slick.js" type="text/javascript">
     </script>
     <script>
         $("document").ready(function () {
             $(".slider").slick({
-                lazyLoad: 'ondemand', // ondemand progressive anticipated
-                infinite: true
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: true,
+                dots: true
             });
         });
     </script>

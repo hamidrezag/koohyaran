@@ -24,6 +24,10 @@ body
 {
     z-index: 100000;
 }
+.menuwrapper:hover ul
+{
+    display: block;
+}
 .menuwrapper a
 {
     text-decoration: none;
@@ -41,6 +45,7 @@ border-radius: 25px;
 background: rgba(255, 255, 255,0.5);
 position: relative;
 z-index: 100;
+display: none;
 }
 .menuwrapper ul li
 {
@@ -65,10 +70,80 @@ border-radius:0px 0px 50px 50px;
 }
 .bottombar 
 {
-    padding-right: 50px;
-    margin-bottom:10px
+    right: 50px;
+    bottom:10px
 }
 .bottombar a
 {
 margin:10px 10px;
+}
+.slider
+{
+    direction: ltr;
+}
+.top0
+{
+    top:0px;
+}
+.bottom0
+{
+    bottom: 0px;
+}
+.z1
+{
+    z-index: 1;
+}
+.z2
+{
+    z-index: 2;
+}
+.z3
+{
+    z-index: 3;
+}
+.z4
+{
+    z-index: 4;
+}
+.z5
+{
+    z-index: 5;
+}
+.z6
+{
+    z-index: 6;
+}
+.content .bgwhite
+{
+    background: rgba(255, 255, 255,0.5);
+}
+.slick-dots
+{
+    bottom: 25px;
+}
+.slick-dots{
+    padding-left: 20px;
+}
+.slick-dots li
+{
+    float: left;
+}
+.slick-dots li button:before
+{
+    font-size: 20px;
+    color: white;
+}
+.slick-dots li.slick-active button:before
+{
+    color: white;
+}
+.vCenterPage
+{
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card
+{
+    background-color: white;
+    border-radius: 50px;
 }
